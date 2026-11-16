@@ -50,3 +50,10 @@ class MainActivity : Activity() {
                 } catch (e: Exception) {
                     if (!conectado) runOnUiThread {
                         status.text = "No se pudo conectar: ${e.message}"
+                                                button.isEnabled = true
+                    }
+                }
+            }.start()
+        }
+    }
+}
